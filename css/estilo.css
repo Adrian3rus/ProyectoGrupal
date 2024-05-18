@@ -14,13 +14,13 @@ h1 {
 }
 
 .logo img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 nav img {
-    width: 150px;
-    height: 120px;
+    width: 120px;
+    height: 100px;
     filter: drop-shadow(2px 2px 20px);
 }
 
@@ -41,6 +41,7 @@ footer {
     position: bottom;
     bottom: 0;
     margin-top: 20%;
+    margin-bottom: 5%;
 
 }
 
