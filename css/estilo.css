@@ -1,4 +1,57 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Happy+Monkey&family=Jersey+15&family=Princess+Sofia&display=swap');
+
+.nosotros {
+    font-family: "Happy Monkey", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10%;
+    margin: 10%;
+}
+
+.cards {
+    display: flex; 
+    
+}
+
+.card {
+    flex: 50%;
+    margin: 10px;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.centrar {
+    object-position: center;
+    text-align: center;
+}
+.card img {
+    width: 150px;
+    filter: drop-shadow(2px 2px 10px);
+}
+
+.card .content {
+    flex-grow: 1;
+    flex-shrink: 1;
+    
+}
+
+.card .foot {
+    background-color: rgb(240, 195, 112);
+    padding: 1%;
+    text-align: center;
+    align-items: center;
+}
+.card button {
+    border-radius: 10px;
+    padding: 2%;
+    gap: 4%;
+    box-shadow: 2px 2px 10px;
+    background-color: rgb(119, 171, 219);
+}
+
 
 
 h1 {
@@ -76,7 +129,20 @@ p {
     display: none;
 }
 
+
+@media screen and (max-width: 800px) {
+
+    .cards {
+        display: grid;
+         }
+ }
+
+
 @media screen and (max-width: 550px) {
+
+    .cards {
+        display: grid;
+         }
     .abrir-menu,
     .cerrar-menu {
         display: block;

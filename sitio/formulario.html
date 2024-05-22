@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .oculto{
+            display: none;
+        }
+        .marron{
+            color: brown;
+        }
+    </style>
+  </head>
+  <body>
+    <form action="">
+        <div>
+            <label for="Nombre_del_alimento">Marca de Alimento</label>
+            <input type="text" id="Nombre_del_alimento">
+        </div>
+
+        <div>
+            <label for="Perros">Perros</label>
+            <input type="radio" name="Tipo_de_alimento" id="Perros">
+            <label for="Gatos">Gatos</label>
+            <input type="radio" name="Tipo_de_alimento" id="Gatos">
+            <label for="Pajaros">Pajaros</label>
+            <input type="radio" name="Tipo_de_alimento" id="Pajaros">
+        </div>
+
+        <div>
+            <label for="Tipo_pago">Tipo de pago</label>
+            <select name="Tipo_pago" id="Tipo_pago">
+                <option value="Efectivo">Efectivo</option>
+                <option value="Tarjeta">Tarjeta</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="foto_alimento">foto de marca</label>
+            <input type="file" id="foto_alimento">
+        </div>
+
+        <div>
+            <div class="oculto marron" id="Error">
+                Este formulario contiene un error
+            </div>
+            <button type="button" onclick="validar_formulario()">Enviar</button>
+        </div>
+
+    </form>
+    <script>
+        function validar_formulario() {
+            console.log("comprobando funcion")
+            let marca_de_alimento = document.getElementById('Nombre_del_alimento').value
+            let Mensaje_de_error = document.getElementById('Error')
+            Mensaje_de_error.classList.add("oculto");
+            if(!marca_de_alimento){
+                console.log(marca_de_alimento)
+                Mensaje_de_error.classList.remove("oculto");
+            }
+        }
+    </script>
+  </body>
+</html>
