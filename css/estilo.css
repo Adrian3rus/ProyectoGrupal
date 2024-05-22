@@ -5,8 +5,8 @@
     font-family: "Happy Monkey", system-ui;
     font-weight: 400;
     font-style: normal;
-    padding: 10%;
     margin: 10%;
+    margin-bottom: 20%;
 }
 
 .cards {
@@ -93,7 +93,7 @@ footer {
     text-align: center;
     position: bottom;
     bottom: 0;
-    margin-top: 20%;
+    margin-top: 10%;
     margin-bottom: 5%;
 
 }
@@ -135,6 +135,13 @@ p {
     .cards {
         display: grid;
          }
+         .nosotros {
+            font-family: "Happy Monkey", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            margin: 10%;
+            margin-bottom: 40%;
+        }
  }
 
 
