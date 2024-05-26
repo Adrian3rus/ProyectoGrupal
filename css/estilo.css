@@ -217,3 +217,10 @@ ul li img {
 
 
 }
+
+.error img {
+   width: 500px;
+   height: 300px;   
+   object-fit: contain;
+
+}
