@@ -116,7 +116,12 @@ p {
     
 }
 
-
+.error img {
+    width: 700px;
+    height: 300px;   
+    object-fit: contain;
+ 
+ }
 
 .nav-list li a {
     text-decoration: none;
@@ -146,6 +151,13 @@ p {
 
 
 @media screen and (max-width: 550px) {
+
+    .error img {
+        width: 400px;
+          
+        object-fit: contain;
+     
+     }
 
     .cards {
         display: grid;
@@ -218,9 +230,3 @@ ul li img {
 
 }
 
-.error img {
-   width: 500px;
-   height: 300px;   
-   object-fit: contain;
-
-}
